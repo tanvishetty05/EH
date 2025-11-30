@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bachat Khata — Banking Demo</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="sim-banner">
+  <div>SIMULATION / TRAINING — This is a fictional demo.</div>
+  <small>Do NOT use real credentials</small>
+</div>
+
+<div class="container">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">BK</div>
+      <div>
+        <h1>Bachat Khata</h1>
+        <div style="font-size:12px;color:#fff;">Educational demo</div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="?page=home">Home</a>
+      <a href="?page=about">About</a>
+      <a href="?page=contact">Contact</a>
+      <a href="?page=help">Help</a>
+    </nav>
+
+    <div class="top-cta">
+      <a href="?page=login"><button class="btn btn-outline">Login</button></a>
+      <a href="?page=signup"><button class="btn btn-primary">Create Demo Account</button></a>
+    </div>
+  </header>
+
+  <main id="mainContent" style="margin-top:18px;"></main>
+
+  <footer class="footer">
+    <div>Quick links: Digital Banking (demo) • UPI (demo) • Help</div>
+    <small>© 2025 Bachat Khata — Educational demo</small>
+  </footer>
+</div>
+
+<!-- Cookie -->
+<div id="cookieBar" class="cookie">
+  <div>This demo stores only simulated local data.</div>
+  <div style="display:flex;gap:10px;">
+    <button id="acceptCookie" class="btn btn-primary">Accept</button>
+    <button id="dismissCookie" class="btn btn-outline">Dismiss</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="backdrop" class="backdrop">
+  <div class="modal">
+    <h3 id="modalTitle">Information</h3>
+    <div id="modalContent"></div>
+    <button id="closeModal" class="btn btn-outline" style="margin-top:12px;">Close</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
